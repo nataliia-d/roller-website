@@ -1,0 +1,63 @@
+/* Modal.css */
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(
+    187,
+    113,
+    255,
+    0.568
+  ); /* Semi-transparent background */
+  z-index: 1;
+  position: fixed; /* Stay in place */
+  top: 0;
+  left: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+}
+
+.modal-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  color: black;
+  background-color: rgba(240, 248, 255, 0.644);
+  width: 70%; /* Width slightly smaller than the modal */
+  max-width: 600px; /* Maximum width */
+  height: 70%; /* Height slightly smaller than the modal */
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add shadow for border effect */
+  text-align: center; /* Center text and other inline content */
+}
+
+.modal-text {
+  font-size: 2em; /* Larger text size */
+  color: rgb(27, 1, 1); /* Big pink letters */
+  margin: 0; /* Remove default margins */
+}
+
+.close {
+  color: rgb(0, 0, 0);
+  background-color: rgba(240, 248, 255, 0.644);
+  border-radius: 50%; /* Make it perfectly round */
+  width: 40px; /* Set a fixed width */
+  height: 40px; /* Set a fixed height */
+  line-height: 40px; /* Center the text vertically */
+  text-align: center; /* Center the text horizontally */
+  padding: 4px;
+  padding-top: 0; /* Remove padding */
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  border: none; /* Optional: Remove border if there is any */
+}
+
