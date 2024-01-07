@@ -2,6 +2,7 @@
   box-sizing: border-box;
 }
 
+
 body {
   margin: 0;
   padding: 0;
@@ -11,12 +12,17 @@ body {
 }
 
 #main {
+  width: 100%;
 }
 
 #header {
   background-color: #98c5ff; /* Baby pink */
   padding: 1rem;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
 }
 
 #body {
@@ -34,6 +40,14 @@ body {
 h1 {
   font-weight: 800;
   font-size: 1.5rem;
+}
+
+.hello{
+
+}
+
+#button-menu{
+  align-self: center;
 }
 
 @media (min-width: 769px) {
