@@ -5,7 +5,6 @@ import Modal from './components/IntroModal';
 import './styles/style.css';
 import './styles/Buttons.css';
 
-
 export const App: FC<{ name: string }> = ({ name }) => {
   const [showModal, setShowModal] = useState(false);
 
@@ -31,7 +30,15 @@ export const App: FC<{ name: string }> = ({ name }) => {
         </div>
         <div id="body">
           <p>Start editing to see some magic happen :)</p>
-          {/* Additional content here */}
+          {/* Embedding the Google Maps iframe */}
+          <iframe 
+            src="https://www.google.com/maps/d/embed?mid=1yFxyDlWkyJVxrr3DWwEGv-HtRR1X18Q&ehbc=2E312F&noprof=1"
+            width="640"
+            height="480"
+            style={{ border: 0 }}
+            allowFullScreen
+            loading="lazy">
+          </iframe>
         </div>
         <div id="footer">
           <p>Footer Content</p>
